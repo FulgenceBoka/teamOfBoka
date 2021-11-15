@@ -53,3 +53,80 @@ body{
 small, .small{
 	font-weight: 300;
 }
+
+a, .btn, button{
+	display: inline-block;
+}
+
+.container{
+	margin: 0 10rem;
+}
+
+.d-flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.d-inline{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	padding: 0.6rem 1.4rem;
+	min-width: 10.8rem;
+	border:none;
+	border-radius: 6px;
+	margin: 0 1rem;
+}
+
+.btn-light{
+	background: var(--light);
+	color: var(--primary);
+	border: 1px solid var(--info);
+}
+
+
+.btn-primary{
+	background: var(--blue);
+	color: var(--white);
+}
+
+.btn-primary:hover, .btn-light:hover{
+	background: var(--info);
+	color: var(--light);
+}
+
+.btn-primary, .btn-light{
+	transition: background color 250ms ease-in, color 250ms ease-in;
+}
+
+
+.header{
+	justify-content: space-between;
+	height: 7rem;
+	background: var(--light);
+	box-shadow: 0 0 1px 0.5px rgba(255, 200, 255, 0.4);
+	margin: 0;
+	padding: 0 10rem;
+}
+
+.logo{
+	margin-right: 3rem;
+}
+
+.navbar__link{
+	margin-right: 2rem;
+}
+
+.header .buttons{
+	width: 40rem;
+	justify-content: end;
+}
+
+
+.header .buttons a{
+	font-weight: 600;
+}
