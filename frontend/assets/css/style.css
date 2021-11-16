@@ -76,7 +76,6 @@ a, .btn, button{
 
 .btn {
 	padding: 0.6rem 1.4rem;
-	min-width: 10.8rem;
 	border:none;
 	border-radius: 6px;
 	margin: 0 1rem;
@@ -106,11 +105,14 @@ a, .btn, button{
 
 .header{
 	justify-content: space-between;
-	height: 7rem;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	height: 8rem;
 	background: var(--light);
-	box-shadow: 0 0 1px 0.5px rgba(255, 200, 255, 0.4);
 	margin: 0;
-	padding: 0 10rem;
+	padding: 0 5rem;
+	box-shadow: 0 0 3px 0.5px rgba(100, 100, 100, 0.7);
 }
 
 .logo{
@@ -118,7 +120,8 @@ a, .btn, button{
 }
 
 .navbar__link{
-	margin-right: 2rem;
+	margin-left: 1.5rem;
+	color: var(--primary);
 }
 
 .header .buttons{
@@ -129,4 +132,47 @@ a, .btn, button{
 
 .header .buttons a{
 	font-weight: 600;
+}
+
+.hamberger{
+	width: 70px;
+	display: none;
+}
+
+
+
+/* mobile screen */
+/* max-width : 480px mobile */
+/* max-width : 768px table */
+/* max-width : 1024 mini pc */
+/* max-width : 1024 plus grand ecran */
+@media screen and (max-width: 768px) {
+	.header{
+		padding: 0 1rem;
+	}
+	.navbar__brand{
+		position: relative;
+	}
+
+	
+	ul.navbar__list.d-flex{
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		background: var(--success);
+		height: calc(100vh - 80px);
+
+	}
+	.hamberger{
+		display: block;
+	}
+	i.is-hidden{display: none;}
+}
+
+
+@media screen and (max-width: 492px) {
+	.btn {padding: 4px 6px;}
 }
