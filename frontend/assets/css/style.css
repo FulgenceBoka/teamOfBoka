@@ -64,6 +64,10 @@ small,
   font-weight: 300;
 }
 
+img{
+  width: 100%;
+}
+
 a,
 .btn,
 button {
@@ -179,12 +183,14 @@ button {
 .main-container {
   padding-top: 80px;
 }
-
-/*  -- bannere-container */
-.bannere-container {
+.section-container{
   width: 100%;
-  height: 80vh;
-  padding: 0 8vw;
+  height: 100vh;
+  padding: 4vh 8vw;
+}
+/*  -- section-container */
+.section-container {
+ 
   background-image: linear-gradient(
     to right,
     var(--dark-blue-primary),
@@ -192,32 +198,33 @@ button {
   );
 }
 
-.bannere-text {
+.section-text {
   padding: 1rem 5px;
   max-width: 30vw;
   text-align: justify;
 }
 
-.bannere-text h1 {
+.section-text h1 {
   color: var(--light);
   line-height: 1;
 }
 
-.bannere-text p {
+.section-text p {
   color: var(--secondary);
   margin: 1rem 0;
+  line-height: 1.1;
 }
-.bannere-buttons {
+.section-buttons {
   margin-top: 2rem;
 }
-.bannere-buttons .bannere__link {
+.section__link {
   color: var(--light);
   font-weight: 600;
   border: 1px solid #e5e5e516;
   transition: 0.3s ease;
 }
 
-.bannere__link--register {
+.section__link--register {
   background-image: linear-gradient(
     to left,
     var(--dark-blue-secondary),
@@ -225,7 +232,7 @@ button {
   );
 }
 
-.bannere__link--connexion {
+.section__link--connexion {
   background-image: linear-gradient(
     to left,
     var(--dark-blue-primary),
@@ -233,8 +240,8 @@ button {
   );
 }
 
-.bannere__link--connexion:hover,
-.bannere__link--register:hover {
+.section__link--connexion:hover,
+.section__link--register:hover {
   background: linear-gradient(
     to left,
     var(--dark-blue-secondary),
@@ -243,10 +250,39 @@ button {
   color: var(--gray);
 }
 
-.bannere-team-images {
+.section-image {
   width: 100%;
 }
 
-.bannere-team-images svg {
+.section-image svg, .section-image img {
   width: 100%;
+}
+/*  title */
+.title{
+  width: 100%;
+  padding: 4rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+/*  ---- comment ca marche ----- */
+section.section-container.comment-ca-marche {
+  padding: 4vh 8vw 4vh 0;
+}
+.comment-ca-marche{
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, var(--dark) 0% 50%,var(--dark-blue-three) 50% 100%);
+}
+
+
+.comment-ca-marche .section-image{
+  width: 50%;
+  height: 100%;
+}
+
+.comment-ca-marche .section-text{
+  flex: 1;
 }
