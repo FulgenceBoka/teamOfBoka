@@ -109,6 +109,14 @@ button {
   color: var(--white);
 }
 
+.btn-teal{
+  background-color: var(--teal);
+}
+
+.btn-teal:hover{
+  color: var(--dark-blue-primary);
+}
+
 .btn-primary:hover,
 .btn-light:hover {
   background: var(--info);
@@ -189,13 +197,9 @@ button {
   padding: 4vh 8vw;
 }
 /*  -- section-container */
-.section-container {
+.bannere {
  
-  background-image: linear-gradient(
-    to right,
-    var(--dark-blue-primary),
-    var(--dark-blue-secondary)
-  );
+  background-color: var(--dark);
 }
 
 .section-text {
@@ -285,4 +289,49 @@ section.section-container.comment-ca-marche {
 
 .comment-ca-marche .section-text{
   flex: 1;
+}
+
+
+/*  --- nos module */
+section.section-container.nos-module{
+  height: 100%;
+  padding-top: 0rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card{
+  width: 30%;
+  padding: 0.6rem 1.6rem;
+  border-radius: 1.1rem;
+  border: 4px solid hsl(162deg 73% 46% / 6%);
+  background-color: hsl(162deg 73% 46% / 9%);
+}
+
+.card__head{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.3rem;
+  height: 150px;
+  
+  border-radius: 1.1rem;
+}
+
+.card__head h2{
+  line-height: 1;
+}
+
+.card__body{
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  line-height: 1.2;
+}
+
+card__body a:hover{
+  background-color: hsl(162deg 73% 46% / 6%) !important;
 }
